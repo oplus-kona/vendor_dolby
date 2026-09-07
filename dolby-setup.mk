@@ -7,7 +7,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DOLBY_PATH)/sepolicy/vendor
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DOLBY_PATH)/hidl/dolby_framework_matrix.xml
 PRODUCT_PACKAGES += \
-	dms-service.xml \
 	vendor.dolby.media.c2@1.0-service.xml \
 	vendor.dolby.hardware.dms.xml
 
@@ -26,14 +25,14 @@ $(call inherit-product, $(DOLBY_PATH)/prebuilts/prebuilts-vendor.mk)
 
 # Dolby props
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.dolby.dax.version=DAX3_3.11.0.10_r2 \
+    ro.vendor.dolby.dax.version=DAX3_3.7.0.8_r1 \
 	persist.vendor.audio_fx.current=dolby
 
 # DAX config
 PRODUCT_COPY_FILES += \
     $(DOLBY_PATH)/soundfx/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
 
-# daxService (Lenovo)
+# daxService (Sony)
 PRODUCT_COPY_FILES += \
     $(DOLBY_PATH)/soundfx/system_ext/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
     $(DOLBY_PATH)/soundfx/system_ext/etc/sysconfig/config-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxservice.xml \
@@ -42,13 +41,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     daxService
 
-# DAXUI (Lenovo)
+# DolbySound (Sony)
 PRODUCT_COPY_FILES += \
-    $(DOLBY_PATH)/soundfx/system_ext/etc/permissions/privapp-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxappui.xml \
-    $(DOLBY_PATH)/soundfx/system_ext/etc/sysconfig/config-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxappui.xml
+    $(DOLBY_PATH)/soundfx/system_ext/etc/permissions/privapp-com.dolby.daxappui2.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxappui2.xml \
+    $(DOLBY_PATH)/soundfx/system_ext/etc/sysconfig/config-com.dolby.daxappui2.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxappui2.xml
 
 PRODUCT_PACKAGES += \
-	DaxUI
+	DolbySound
 
 # Dolby Vision
 ifeq ($(TARGET_SUPPORTS_DOVI),true)

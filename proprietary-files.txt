@@ -1,47 +1,33 @@
-# Imported from: motorola/rtwo_g/msi:16/W1TR36M-W1-ST34/6262a5:user/release-keys
+# Imported from: Sony pdx234 (Xperia 1 V) 67.1.A.2.112
 
-# Dolby_Codec2
-vendor/bin/hw/vendor.dolby.dms.service|be1effbf063c0f341b8f0f3c54aae1b9190c86ad
-vendor/bin/hw/vendor.dolby.media.c2@1.0-service|09964ad8720842e9b68340e0ec707662805996d3
-vendor/etc/init/dms-service.rc|96d33e6009de44b032f7bee69d37a9ec4e405c5a
+# Dolby Codec2
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service|e85d9ddc34fb3fe6fa4fcd6bb69a06d2049f556c
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7
-vendor/lib/libdapparamstorage.so|8c98227162a81270cde7fe33052cc4d7fbf7f1c9
-vendor/lib/libdmshal.so|5f91d24d286775ba361146410997c1a9dd8778e8
-vendor/lib/vendor.dolby.dms-V1-ndk.so|026eb703270774302e3c780309167f5b32d4663e
-vendor/lib/vendor.dolby.hardware.dms@2.0.so|6249622c674d026761a6480c76e98287bc3677d0
-vendor/lib/vendor.dolby.hardware.dms@2.1.so|dde02e2095aff3707edb543e30c8fcc0b16a546b
-vendor/lib64/libcodec2_soft_ac4dec.so|0ca379289882182977aabad61eb47732bf9643c8
-vendor/lib64/libcodec2_soft_ddpdec.so|14f071ca8a14f76a6c87bc60a15cab96dc5df947
-vendor/lib64/libcodec2_store_dolby.so|37e945a388fee09afbdf35c63b694e955d4ecc11
-vendor/lib64/libdapparamstorage.so|71f8b8b10d4a2d046147d02474ccb68dfc1a12ef
-vendor/lib64/libdeccfg.so|d64e4333ac2d5709910f8e66139f2e3b998611db
-vendor/lib64/libdlbdsservice.so|41a4528c98dc70a222a9ef05b530f818b3fb80d4
-vendor/lib64/libdmshal.so|3d3af5891e48d99c532b0886ff522c2c627b024d
-vendor/lib64/vendor.dolby.dms-V1-ndk.so|5eb5c2601177ca4862538e112d65685d151586be
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|c7d4802611488ff8cba471e190a3b07d49fadaef
-vendor/lib64/vendor.dolby.hardware.dms@2.1.so|f2d2a60943bb0e210128d7046552b271aacc31e1
+vendor/lib64/libcodec2_soft_ac4dec.so|9b00e0d1a072fa523c1f0c1aabda58703259269d
+vendor/lib64/libcodec2_soft_ddpdec.so|96d786d3aba1943fcfecdb00bad5a28d5bd8f6bd
+vendor/lib64/libcodec2_soft_dolby.so|2856111922898f65e522b24b03c5a1dccf3e59de
+vendor/lib64/libcodec2_store_dolby.so|37dab034d10c78443b0cdb16df62a0664c53c4eb
+vendor/lib64/libdeccfg.so|1a3392c530cb36c728a1cc1d18619c7444cde248
 
-# Imported from: Sony XQ-DQ72_SEA_67.2.A.3.163
-
-# Dolby_soundfx
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|76fe11bc5778d47f6f88f2233b6b2b2022733241|1620d42d71809c3c581d8012a88383de30dbec16
+# Dolby SoundFX & DMS
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|76fe11bc5778d47f6f88f2233b6b2b2022733241
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
-vendor/lib/libdapparamstorage.so:vendor/lib/libdapparamstorage-sony.so;FIX_SONAME|044abf28acdbace176b7966af1899faaf2cde836|a68ae55487d74378a699647d69cac723b340d3a4
-vendor/lib/libdlbpreg.so|aac7988cd6cd22646c9c10074a007f5712862f2b|9c8978e42d45c38ab4e10425f90131ac346f50b7
-vendor/lib/soundfx/libdlbvol.so|fbc6a55a53cf99b9f5055aa4b70391060c2df8da|9f47efda71759223cbff7a9606c4fefcdf9e8b8e
-vendor/lib/soundfx/libswdap.so|aedcc8cade96ba9d7a8b4f633f001a6976b23510|6ab07b8d3d7d11216b01cf242b1ffff57a53bae7
-vendor/lib/soundfx/libswgamedap.so|5b0b30780d49159467515b2b587990a6df5094bf|f8df164eaa2d959353895faf5e0a3154f7429379
-vendor/lib/soundfx/libswvqe.so|e3ba867a69b37624b2ac6c3827c647d9f4f4e6b9|82231151619a4088c865146fac0837727d2b102a
-vendor/lib/vendor.dolby.hardware.dms@2.0.so:vendor/lib/vendor.dolby.hardware.dms@2.0-sony.so;FIX_SONAME|e72e040daa61398335c2435f6c37041cc2973057|9cfde34531be9b15d63534a99eea3467d18d0e5b
-vendor/lib64/libdapparamstorage.so:vendor/lib64/libdapparamstorage-sony.so;FIX_SONAME|a09b0b02ed61e96e6760102ed6c85c89e6b3f1a7|e04af0189c3c24d6b481cbc83ab7a8e31416d458
-vendor/lib64/libdlbdsservice.so:vendor/lib64/libdlbdsservice-sony.so;FIX_SONAME|c5e1c4913bfb17ba23608be3e4a2e102f8bc8a7f|edd6d377b28e6fd5431640e672226f0741117188
-vendor/lib64/libdlbpreg.so|a636ce9056611cf75171cce3b41495b591b503e3|20fd28d6ad9548b58037866779ed28a12add22e7
-vendor/lib64/soundfx/libdlbvol.so|d823cc40ad6f60b424fb50bc8f206bff33fbfb69|45128af2f585c7e213e663b0eec061ca1b9c5ae4
-vendor/lib64/soundfx/libswdap.so|27cb4402bad389287b0b114398d66c96b9b17e49|d27287fc0cb98f1d47cf9386bc18d000d7c1d41d
-vendor/lib64/soundfx/libswgamedap.so|6be673e25f25f8f2013b5785725016802e8eced8|b3d5d863e787d929a94ef16375c2f3a432755a06
-vendor/lib64/soundfx/libswvqe.so|23f22eb9ae81e1f8789a81808794a0c2fdc88137|d340b7d1b1dc89e5e383a7027625f995ee1d12ba
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|59ba0b46c622f28e34f49a334c4cfe6d4bc34be6|aefc2a8d43ddea4fdee44be0e2a3da5e38eba21f
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so:vendor/lib64/vendor.dolby.hardware.dms@2.0-sony.so;FIX_SONAME|1c6b82e7da2d3e6ba712f9c9e7f96178280361de|b87f8981c85ef97201e7ebdadfe4b9cc7ad631d4
+vendor/lib/libdapparamstorage.so|3e920c98b20234c80620efdc31f9856e46fda394
+vendor/lib64/libdapparamstorage.so|a09b0b02ed61e96e6760102ed6c85c89e6b3f1a7
+vendor/lib/libdlbpreg.so|082cc0d8be4608d747306ac3cdf6754ced749a73|709dac91a2b39f1450527313cc6d10ce0671b3ef
+vendor/lib64/libdlbpreg.so|170fb78643e8ae969889aaff7f5ec922c0f30237|6dd7498143c8891ad9f07e71dade52b99a3dbf37
+vendor/lib64/libdlbdsservice.so|c5e1c4913bfb17ba23608be3e4a2e102f8bc8a7f|4d9461180a06166d8df706a8a4aae57509d18255
+vendor/lib/soundfx/libdlbvol.so|fd37e40fbe6e27acf93fb5aa6e18ffd416b97d46|4430011e9603a25e06d17b635223ac9887220cef
+vendor/lib64/soundfx/libdlbvol.so|9a4af9b998db433143f026740367f6ca80035968|7f9b995ba13241eb50875baf621a1b2193bd9361
+vendor/lib/soundfx/libswdap.so|155dbdaeeb739f2b80c891bb4061f6bc2daa725e|dca0033b0d2712ae4995f8dafe5aaf5938009de4
+vendor/lib64/soundfx/libswdap.so|27cb4402bad389287b0b114398d66c96b9b17e49|df21fbe4475431ea8f715f9d58da0cfec9f92fd7
+vendor/lib/soundfx/libswgamedap.so|eee0a74513112cab1ad73863dde3147295d6fc59
+vendor/lib64/soundfx/libswgamedap.so|6be673e25f25f8f2013b5785725016802e8eced8
+vendor/lib/soundfx/libswvqe.so|7e9617a521e9437f341a23f100fc996321868cf8
+vendor/lib64/soundfx/libswvqe.so|23f22eb9ae81e1f8789a81808794a0c2fdc88137
+vendor/lib/vendor.dolby.hardware.dms@2.0.so|13ea1b511c7bc99a92fdcb1ffc208a0a832cdf1a
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|1c6b82e7da2d3e6ba712f9c9e7f96178280361de
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|59ba0b46c622f28e34f49a334c4cfe6d4bc34be6
 
 # Vision
 vendor/bin/hw/dolbycodec2

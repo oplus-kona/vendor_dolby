@@ -39,19 +39,9 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    ('vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service',
-     'vendor/lib/soundfx/libdlbvol.so','vendor/lib64/soundfx/libdlbvol.so',
-     'vendor/lib/soundfx/libswdap.so', 'vendor/lib64/soundfx/libswdap.so',
-     'vendor/lib/soundfx/libswgamedap.so', 'vendor/lib64/soundfx/libswgamedap.so',
-     'vendor/lib/soundfx/libswvqe.so', 'vendor/lib64/soundfx/libswvqe.so',
-     'vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so',
-     'vendor/lib64/libdlbdsservice-sony.so',): blob_fixup()
-        .replace_needed('vendor.dolby.hardware.dms@2.0.so', 'vendor.dolby.hardware.dms@2.0-sony.so')
-        .replace_needed('libdapparamstorage.so', 'libdapparamstorage-sony.so')
-        .replace_needed('libdlbdsservice.so', 'libdlbdsservice-sony.so'),
-    ('vendor/lib/soundfx/libdlbvol.so','vendor/lib64/soundfx/libdlbvol.so',
+    ('vendor/lib/soundfx/libdlbvol.so', 'vendor/lib64/soundfx/libdlbvol.so',
      'vendor/lib/libdlbpreg.so', 'vendor/lib64/libdlbpreg.so',
-     'vendor/lib64/libdlbdsservice-sony.so'): blob_fixup()
+     'vendor/lib64/libdlbdsservice.so'): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     ('vendor/lib/soundfx/libswdap.so'): blob_fixup()
         .binary_regex_replace(rb'\x28\xee\x05\x46\x20\x46\xf8\xf0\x2c\xef\xb5\xfa\x85\xf0\x47\x09',
