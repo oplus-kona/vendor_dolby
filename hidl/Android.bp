@@ -1,6 +1,6 @@
 prebuilt_etc_xml {
-    name: "vendor.dolby.media.c2-default-service-dax.xml",
-    src: "vendor.dolby.media.c2-default-service-dax.xml",
+    name: "vendor.dolby.media.c2@1.0-service.xml",
+    src: "vendor.dolby.media.c2@1.0-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -14,7 +14,6 @@ prebuilt_etc_xml {
     sub_dir: "vintf/manifest",
     soc_specific: true,
 }
-
 
 prebuilt_etc_xml {
     name: "vendor.dolby.media.dvs-service.xml",
