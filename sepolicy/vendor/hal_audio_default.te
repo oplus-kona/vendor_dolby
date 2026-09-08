@@ -3,3 +3,5 @@ hal_client_domain(hal_audio_default, hal_dms)
 
 # AIDL DMS
 typeattribute hal_audio_default hal_aidl_dms_client;
+
+get_prop(hal_audio_default, vendor_dolby_prop)
