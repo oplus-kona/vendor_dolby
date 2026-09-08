@@ -33,6 +33,7 @@ PRODUCT_PACKAGES += \
     libcodec2_store_dolby \
     libdeccfg \
     libdlbdsservice \
+    libdmshal \
     libdolbyottcameracontrol \
     libdolbyvision \
     vendor.dolby.dvs@1.0 \

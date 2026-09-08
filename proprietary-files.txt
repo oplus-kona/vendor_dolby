@@ -7,6 +7,8 @@ vendor/lib64/libcodec2_soft_ac4dec.so|3aaffed468bdf4f076ef4a121ddc4bd2ceafdbe6
 vendor/lib64/libcodec2_soft_ddpdec.so|1c59313ad76a74d259342805cc08bfd9d6b3ea6e
 vendor/lib64/libcodec2_store_dolby.so|cf3f62e55977695470bff2163a7ee26125cdf745
 vendor/lib64/libdeccfg.so|6d9c120d53b70aed7d67ce8475d0c8a94fe935de
+vendor/lib64/libdmshal.so|cd152e730114af2a28ec18760e30780c193fb755
+
 
 # Dolby SoundFX & DMS
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|76fe11bc5778d47f6f88f2233b6b2b2022733241
