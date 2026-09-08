@@ -26,7 +26,7 @@ $(call inherit-product, $(DOLBY_PATH)/prebuilts/prebuilts-vendor.mk)
 
 # Dolby props
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.dolby.dax.version=DAX3_3.7.0.8_r1 \
+    ro.vendor.dolby.dax.version=DAX3_3.13.0.9_r1 \
 	persist.vendor.audio_fx.current=dolby
 
 # DAX config
