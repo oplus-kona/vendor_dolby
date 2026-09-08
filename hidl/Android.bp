@@ -16,6 +16,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "dms-service.xml",
+    owner: "dolby",
+    src: "dms-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.dolby.media.dvs-service.xml",
     src: "vendor.dolby.media.dvs-service.xml",
     filename_from_src: true,

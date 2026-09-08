@@ -1064,6 +1064,40 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "vendor.dolby.dms.service",
+    owner: "dolby",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.dolby.dms.service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "vendor.dolby.dms-V1-ndk",
+                "libdapparamstorage",
+                "libdmshal",
+                "libdlbdsservice",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "vendor.dolby.hardware.dms@2.0-service",
     owner: "dolby",
     target: {

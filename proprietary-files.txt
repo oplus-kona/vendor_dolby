@@ -11,6 +11,8 @@ vendor/lib64/libdmshal.so|f9c16f50fd85918e27b3622af2f9c660382fc3ac
 vendor/lib64/vendor.dolby.dms-V1-ndk.so|838fd8f8d1523d1a84c8193cb58c86879470698d
 
 # Dolby SoundFX & DMS
+vendor/bin/hw/vendor.dolby.dms.service|513ae49d22a43100bb887916f9b8baadad8a3490
+vendor/etc/init/dms-service.rc|96d33e6009de44b032f7bee69d37a9ec4e405c5a
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|76fe11bc5778d47f6f88f2233b6b2b2022733241
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
 vendor/lib/libdapparamstorage.so|3e920c98b20234c80620efdc31f9856e46fda394

@@ -8,7 +8,8 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DOLBY_PATH)/sepolicy/vendor
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DOLBY_PATH)/hidl/dolby_framework_matrix.xml
 PRODUCT_PACKAGES += \
 	vendor.dolby.media.c2-default-service-dax.xml \
-	vendor.dolby.hardware.dms.xml
+	vendor.dolby.hardware.dms.xml \
+	dms-service.xml
 
 # Dolby Audio media codecs (AC3, EAC3, EAC3-JOC, AC4)
 ifeq ($(TARGET_SUPPORTS_DOLBY_CODECS),)
