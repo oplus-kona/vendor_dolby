@@ -1,7 +1,15 @@
 type hal_dvs_default, domain;
 type hal_dvs_default_exec, exec_type, file_type, vendor_file_type;
 type hal_dvs_service, hal_service_type, service_manager_type;
+type hal_dvs_hwservice, hwservice_manager_type;
 
+# HIDL
+binder_call(hal_dvs_client, hal_dvs_server)
+binder_call(hal_dvs_server, hal_dvs_client)
+add_hwservice(hal_dvs_server, hal_dvs_hwservice)
+allow hal_dvs_client hal_dvs_hwservice:hwservice_manager find;
+
+# AIDL
 allow hal_dvs_client hal_dvs_server:binder { call transfer };
 allow hal_dvs_client hal_dvs_server:binder transfer;
 allow hal_dvs_client hal_dvs_server:fd *;
@@ -16,6 +24,8 @@ allow hal_dvs_default fwk_sensor_service:service_manager find;
 allow hal_dvs_default vendor_sysfs_graphics:dir { open read search };
 allow hal_dvs_default vendor_sysfs_graphics:file { getattr open read };
 init_daemon_domain(hal_dvs_default)
+get_prop(hal_dvs_server, vendor_dolby_prop)
+get_prop(hal_dvs_server, vendor_dolbyv_prop)
 set_prop(hal_dvs_server, vendor_dolbyv_prop)
 binder_use(hal_dvs_default)
 hal_server_domain(hal_dvs_default, hal_dvs)
