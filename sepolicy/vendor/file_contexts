@@ -1,9 +1,6 @@
 # Shared Dolby data for HIDL and AIDL DMS HALs
 /data/vendor/dolby(/.*)?                                                        u:object_r:vendor_dolby_file:s0
 
-# AIDL Dolby DMS HAL service
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.dms\.service                      u:object_r:hal_aidl_dms_default_exec:s0
-
 # HIDL Dolby DMS HAL service
 /(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@1\.0-service        u:object_r:hal_dms_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service        u:object_r:hal_dms_default_exec:s0

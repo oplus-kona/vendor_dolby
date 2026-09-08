@@ -7,7 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/dolby/prebuilts/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
-    vendor/dolby/prebuilts/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
     vendor/dolby/prebuilts/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/dolby/prebuilts/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
     vendor/dolby/prebuilts/proprietary/vendor/etc/init/vendor.dolby.media.dvs-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.dvs-service-vision.rc \
@@ -34,14 +33,11 @@ PRODUCT_PACKAGES += \
     libcodec2_store_dolby \
     libdeccfg \
     libdlbdsservice \
-    libdmshal \
     libdolbyottcameracontrol \
     libdolbyvision \
-    vendor.dolby.dms-V1-ndk \
     vendor.dolby.dvs@1.0 \
     vendor.dolby.hardware.dms@2.0-impl \
     dolbycodec2 \
     dvs-hal-service \
-    vendor.dolby.dms.service \
     vendor.dolby.hardware.dms@2.0-service \
     vendor.dolby.media.c2-default-service-dax

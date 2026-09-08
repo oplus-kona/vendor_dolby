@@ -658,7 +658,6 @@ cc_prebuilt_library_shared {
                 "libdeccfg",
                 "libstagefright_foundation",
                 "libcutils",
-                "libdmshal",
                 "server_configurable_flags",
                 "libaconfig_storage_read_api_cc",
                 "libbase",
@@ -696,7 +695,6 @@ cc_prebuilt_library_shared {
                 "libdeccfg",
                 "libstagefright_foundation",
                 "libcutils",
-                "libdmshal",
                 "server_configurable_flags",
                 "libaconfig_storage_read_api_cc",
                 "libbase",
@@ -815,39 +813,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdmshal",
-    owner: "dolby",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdmshal.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libbinder_ndk",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libdapparamstorage",
-                "vendor.dolby.dms-V1-ndk",
-                "libhidlbase",
-                "vendor.dolby.hardware.dms@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdolbyottcameracontrol",
     owner: "dolby",
     strip: {
@@ -901,31 +866,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "c2.dolby.egl",
                 "c2.dolby.client",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.dolby.dms-V1-ndk",
-    owner: "dolby",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.dolby.dms-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -1047,40 +987,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libcutils",
                 "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.dolby.dms.service",
-    owner: "dolby",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.dolby.dms.service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "vendor.dolby.dms-V1-ndk",
-                "libdapparamstorage",
-                "libdmshal",
-                "libdlbdsservice",
                 "libc++",
                 "libc",
                 "libm",

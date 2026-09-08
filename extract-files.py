@@ -37,8 +37,12 @@ lib_fixups: lib_fixups_user_type = {
 
     # ): lib_fixup_vendor_suffix,
 }
-
 blob_fixups: blob_fixups_user_type = {
+    (
+        'vendor/lib64/libcodec2_soft_ac4dec.so',
+        'vendor/lib64/libcodec2_soft_ddpdec.so',
+    ): blob_fixup()
+        .remove_needed('libdmshal.so'),
     ('vendor/lib/soundfx/libdlbvol.so', 'vendor/lib64/soundfx/libdlbvol.so',
      'vendor/lib/libdlbpreg.so', 'vendor/lib64/libdlbpreg.so',
      'vendor/lib64/libdlbdsservice.so'): blob_fixup()
