@@ -1,13 +1,14 @@
 # Imported from: Sony pdx234 (Xperia 1 V) 67.1.A.2.112
 
 # Dolby Codec2
-vendor/bin/hw/vendor.dolby.media.c2@1.0-service|e85d9ddc34fb3fe6fa4fcd6bb69a06d2049f556c
-vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7
-vendor/lib64/libcodec2_soft_ac4dec.so|9b00e0d1a072fa523c1f0c1aabda58703259269d
-vendor/lib64/libcodec2_soft_ddpdec.so|96d786d3aba1943fcfecdb00bad5a28d5bd8f6bd
-vendor/lib64/libcodec2_soft_dolby.so|2856111922898f65e522b24b03c5a1dccf3e59de
-vendor/lib64/libcodec2_store_dolby.so|37dab034d10c78443b0cdb16df62a0664c53c4eb
-vendor/lib64/libdeccfg.so|1a3392c530cb36c728a1cc1d18619c7444cde248
+vendor/bin/hw/vendor.dolby.media.c2-default-service-dax|77430da4aac2bf7f7882eddae928d62fc0c5a9bd
+vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc|bdc5275ccbd3515d63597f911393a1074d35348e
+vendor/lib64/libcodec2_soft_ac4dec.so|4050519f75cd49abb4cc58c5f4acefe139ec72d7
+vendor/lib64/libcodec2_soft_ddpdec.so|a6c485b83a7299c847bd93d65994621647314379
+vendor/lib64/libcodec2_store_dolby.so|cf3f62e55977695470bff2163a7ee26125cdf745
+vendor/lib64/libdeccfg.so|6d9c120d53b70aed7d67ce8475d0c8a94fe935de
+vendor/lib64/libdmshal.so|f9c16f50fd85918e27b3622af2f9c660382fc3ac
+vendor/lib64/vendor.dolby.dms-V1-ndk.so|838fd8f8d1523d1a84c8193cb58c86879470698d
 
 # Dolby SoundFX & DMS
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|76fe11bc5778d47f6f88f2233b6b2b2022733241
